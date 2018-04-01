@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+
+python ~/.shortcuts/hotspot.py >devices.txt
+LAPTOP=`cat devices.txt | grep laptop`
+am broadcast --user 0 -a net.dinglish.tasker.pc_connected -e conn "$LAPTOP"
+
