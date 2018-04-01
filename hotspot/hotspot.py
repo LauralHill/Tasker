@@ -5,11 +5,12 @@ try: #python3
     from urllib.request import urlopen
 except: #python2
     from urllib2 import urlopen
-
+#I found this on stack overflow once, modified 
+#it so it shows device name, MAC Address and IP. 
 
 #import requests
 
-# Store Mac address of all nodes here
+# Store Mac address of all nodes HERE, replace but keep in lower case! 
 saved = {
     'c4:17:fe:67:8f:19': 'My laptop',
     'ec:88:92:79:8e:9e': 'Old phone',
