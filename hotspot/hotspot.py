@@ -12,9 +12,8 @@ except: #python2
 
 # Store Mac address of all nodes HERE, replace but keep in lower case! 
 saved = {
-    'c4:17:fe:67:8f:19': 'My laptop',
-    'ec:88:92:79:8e:9e': 'Old phone',
-    '68:37:e9:7e:9b:c6': 'Kindle',
+    'xx:xx:xx:xx:xx:xx': 'My laptop',
+   
 }
 
 # Set wireless interface using ifconfig
