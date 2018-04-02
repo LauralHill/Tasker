@@ -1,0 +1,301 @@
+<TaskerData sr="" dvi="1" tv="5.1.5b">
+	<Task sr="task661">
+		<cdate>1522555874134</cdate>
+		<edate>1522635846099</edate>
+		<id>661</id>
+		<nme>General Pause Toggle</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<label>Play Music</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Player</lhs>
+					<op>2</op>
+					<rhs>*google*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>940160580</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<IntentAction>MEDIA_PLAY_PAUSE_KEY_DOWN</IntentAction>
+					<IntentAction-type>java.lang.String</IntentAction-type>
+					<IntentApp>Media</IntentApp>
+					<IntentApp-type>java.lang.String</IntentApp-type>
+					<IntentData>&lt;null&gt;</IntentData>
+					<IntentData-type>java.lang.String</IntentData-type>
+					<IntentMimeType>&lt;null&gt;</IntentMimeType>
+					<IntentMimeType-type>java.lang.String</IntentMimeType-type>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN>85</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN-type>java.lang.String</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Package: com.google.android.music
+Class: com.google.android.music.playback.MediaButtonIntentReceiver
+App: Media
+Action: Press Play/Pause Key Down
+Play/Pause Button Down: 85</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<configclass>com.google.android.music.playback.MediaButtonIntentReceiver</configclass>
+					<configclass-type>java.lang.String</configclass-type>
+					<configpackage>com.google.android.music</configpackage>
+					<configpackage-type>java.lang.String</configpackage-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>IntentApp configpackage configclass IntentAction android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>1bb12383-230b-49a7-b3fd-62b942180ceb</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoshare.intent.IntentShare</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoshare</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoshare.activity.ActivityConfigShare</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>940160580</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<IntentAction>MEDIA_PLAY_PAUSE_KEY_UP</IntentAction>
+					<IntentAction-type>java.lang.String</IntentAction-type>
+					<IntentApp>Media</IntentApp>
+					<IntentApp-type>java.lang.String</IntentApp-type>
+					<IntentData>&lt;null&gt;</IntentData>
+					<IntentData-type>java.lang.String</IntentData-type>
+					<IntentMimeType>&lt;null&gt;</IntentMimeType>
+					<IntentMimeType-type>java.lang.String</IntentMimeType-type>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP>85</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP-type>java.lang.String</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Package: com.google.android.music
+Class: com.google.android.music.playback.MediaButtonIntentReceiver
+App: Media
+Action: Press Play/Pause Key Up
+Play/Pause Button Up: 85</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<configclass>com.google.android.music.playback.MediaButtonIntentReceiver</configclass>
+					<configclass-type>java.lang.String</configclass-type>
+					<configpackage>com.google.android.music</configpackage>
+					<configpackage-type>java.lang.String</configpackage-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>IntentApp configpackage configclass IntentAction android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>1bb12383-230b-49a7-b3fd-62b942180ceb</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoshare.intent.IntentShare</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoshare</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoshare.activity.ActivityConfigShare</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Player</lhs>
+					<op>2</op>
+					<rhs>*musicolet</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>940160580</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<IntentAction>MEDIA_PLAY_PAUSE_KEY_DOWN</IntentAction>
+					<IntentAction-type>java.lang.String</IntentAction-type>
+					<IntentApp>Media</IntentApp>
+					<IntentApp-type>java.lang.String</IntentApp-type>
+					<IntentData>&lt;null&gt;</IntentData>
+					<IntentData-type>java.lang.String</IntentData-type>
+					<IntentMimeType>&lt;null&gt;</IntentMimeType>
+					<IntentMimeType-type>java.lang.String</IntentMimeType-type>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN>85</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN-type>java.lang.String</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Package: in.krosbits.musicolet
+Class: in.krosbits.musicolet.RemoteMediaControlReceiver
+App: Media
+Action: Press Play/Pause Key Down
+Play/Pause Button Down: 85</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<configclass>in.krosbits.musicolet.RemoteMediaControlReceiver</configclass>
+					<configclass-type>java.lang.String</configclass-type>
+					<configpackage>in.krosbits.musicolet</configpackage>
+					<configpackage-type>java.lang.String</configpackage-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>IntentApp configpackage configclass IntentAction android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>1bb12383-230b-49a7-b3fd-62b942180ceb</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoshare.intent.IntentShare</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoshare</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoshare.activity.ActivityConfigShare</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>940160580</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<IntentAction>MEDIA_PLAY_PAUSE_KEY_UP</IntentAction>
+					<IntentAction-type>java.lang.String</IntentAction-type>
+					<IntentApp>Media</IntentApp>
+					<IntentApp-type>java.lang.String</IntentApp-type>
+					<IntentData>&lt;null&gt;</IntentData>
+					<IntentData-type>java.lang.String</IntentData-type>
+					<IntentMimeType>&lt;null&gt;</IntentMimeType>
+					<IntentMimeType-type>java.lang.String</IntentMimeType-type>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP>85</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP-type>java.lang.String</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Package: in.krosbits.musicolet
+Class: in.krosbits.musicolet.RemoteMediaControlReceiver
+App: Media
+Action: Press Play/Pause Key Up
+Play/Pause Button Up: 85</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<configclass>in.krosbits.musicolet.RemoteMediaControlReceiver</configclass>
+					<configclass-type>java.lang.String</configclass-type>
+					<configpackage>in.krosbits.musicolet</configpackage>
+					<configpackage-type>java.lang.String</configpackage-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>IntentApp configpackage configclass IntentAction android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>1bb12383-230b-49a7-b3fd-62b942180ceb</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoshare.intent.IntentShare</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoshare</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoshare.activity.ActivityConfigShare</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>43</code>
+			<label>Last try!</label>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>940160580</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<IntentAction>MEDIA_PLAY_PAUSE_KEY_DOWN</IntentAction>
+					<IntentAction-type>java.lang.String</IntentAction-type>
+					<IntentApp>Media</IntentApp>
+					<IntentApp-type>java.lang.String</IntentApp-type>
+					<IntentData>&lt;null&gt;</IntentData>
+					<IntentData-type>java.lang.String</IntentData-type>
+					<IntentMimeType>&lt;null&gt;</IntentMimeType>
+					<IntentMimeType-type>java.lang.String</IntentMimeType-type>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN>85</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN-type>java.lang.String</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Package: apk.innody.music
+Class: apk.innody.music.MediaButtonIntentReceiver
+App: Media
+Action: Press Play/Pause Key Down
+Play/Pause Button Down: 85</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<configclass>apk.innody.music.MediaButtonIntentReceiver</configclass>
+					<configclass-type>java.lang.String</configclass-type>
+					<configpackage>apk.innody.music</configpackage>
+					<configpackage-type>java.lang.String</configpackage-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>IntentApp configpackage configclass IntentAction android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_DOWN plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>1bb12383-230b-49a7-b3fd-62b942180ceb</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoshare.intent.IntentShare</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoshare</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoshare.activity.ActivityConfigShare</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>940160580</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<IntentAction>MEDIA_PLAY_PAUSE_KEY_UP</IntentAction>
+					<IntentAction-type>java.lang.String</IntentAction-type>
+					<IntentApp>Media</IntentApp>
+					<IntentApp-type>java.lang.String</IntentApp-type>
+					<IntentData>&lt;null&gt;</IntentData>
+					<IntentData-type>java.lang.String</IntentData-type>
+					<IntentMimeType>&lt;null&gt;</IntentMimeType>
+					<IntentMimeType-type>java.lang.String</IntentMimeType-type>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP>85</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP>
+					<android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP-type>java.lang.String</android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Package: apk.innody.music
+Class: apk.innody.music.MediaButtonIntentReceiver
+App: Media
+Action: Press Play/Pause Key Up
+Play/Pause Button Up: 85</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<configclass>apk.innody.music.MediaButtonIntentReceiver</configclass>
+					<configclass-type>java.lang.String</configclass-type>
+					<configpackage>apk.innody.music</configpackage>
+					<configpackage-type>java.lang.String</configpackage-type>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
+Error Code
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
+Error Message
+Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>IntentApp configpackage configclass IntentAction android.intent.extra.KEY_EVENTMEDIA_PLAY_PAUSE_KEY_UP plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<plugininstanceid>1bb12383-230b-49a7-b3fd-62b942180ceb</plugininstanceid>
+					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
+					<plugintypeid>com.joaomgcd.autoshare.intent.IntentShare</plugintypeid>
+					<plugintypeid-type>java.lang.String</plugintypeid-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.joaomgcd.autoshare</Str>
+			<Str sr="arg2" ve="3">com.joaomgcd.autoshare.activity.ActivityConfigShare</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+</TaskerData>
