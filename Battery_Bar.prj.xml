@@ -1,0 +1,540 @@
+<TaskerData sr="" dvi="1" tv="5.1.5b">
+	<dmetric>1440.0,2381.0</dmetric>
+	<Profile sr="prof551" ve="2">
+		<cdate>1521177570768</cdate>
+		<clp>true</clp>
+		<edate>1522499940473</edate>
+		<flags>1</flags>
+		<id>551</id>
+		<limit>true</limit>
+		<mid0>549</mid0>
+		<nme>Battery Bar Always On</nme>
+		<Time sr="con0">
+			<fh>0</fh>
+			<fm>0</fm>
+			<th>23</th>
+			<tm>59</tm>
+		</Time>
+	</Profile>
+	<Profile sr="prof552" ve="2">
+		<cdate>1521177570776</cdate>
+		<clp>true</clp>
+		<edate>1442293300189</edate>
+		<flags>1</flags>
+		<id>552</id>
+		<mid0>550</mid0>
+		<Event sr="con0" ve="2">
+			<code>203</code>
+		</Event>
+	</Profile>
+	<Profile sr="prof553" ve="2">
+		<cdate>1521177570783</cdate>
+		<clp>true</clp>
+		<edate>1522499964990</edate>
+		<flags>1</flags>
+		<id>553</id>
+		<mid0>549</mid0>
+		<mid1>548</mid1>
+		<nme>On Battery</nme>
+		<State sr="con0" ve="2">
+			<code>140</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="98"/>
+		</State>
+	</Profile>
+	<Profile sr="prof559" ve="2">
+		<cdate>1521177570788</cdate>
+		<edate>1522499913047</edate>
+		<flags>1</flags>
+		<id>559</id>
+		<mid0>550</mid0>
+		<mid1>550</mid1>
+		<nme>Screen Orientation Change</nme>
+		<State sr="con0" ve="2">
+			<code>122</code>
+			<pin>true</pin>
+			<Int sr="arg0" val="0"/>
+		</State>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1436660267454</cdate>
+		<name>Battery Bar</name>
+		<pids>553,552,551,559</pids>
+		<scenes>scnBatteryBar</scenes>
+		<tids>550,659,549,548</tids>
+		<Img sr="icon" ve="2">
+			<nme>hd_device_access_battery</nme>
+		</Img>
+	</Project>
+	<Scene sr="scenescnBatteryBar">
+		<cdate>1436659103296</cdate>
+		<edate>1522496948638</edate>
+		<heightLand>50</heightLand>
+		<heightPort>24</heightPort>
+		<nme>scnBatteryBar</nme>
+		<widthLand>3000</widthLand>
+		<widthPort>1440</widthPort>
+		<RectElement sr="elements0">
+			<flags>4</flags>
+			<geom>0,0,1440,2,0,0,3000,2</geom>
+			<Str sr="arg0" ve="3">Bar</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">#FF88025C</Str>
+			<Str sr="arg3" ve="3">#FF336699</Str>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<RectElement sr="elements1">
+			<flags>4</flags>
+			<geom>1400,0,40,24,7,0,33,24</geom>
+			<Str sr="arg0" ve="3">Hider</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF000000</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#00FFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">scnBatteryBar</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task548">
+		<cdate>1436662625071</cdate>
+		<edate>1522499641848</edate>
+		<id>548</id>
+		<nme>Hide Battery Bar</nme>
+		<pri>1006</pri>
+		<Action sr="act0" ve="7">
+			<code>48</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task549">
+		<cdate>1436661166165</cdate>
+		<edate>1522499661940</edate>
+		<id>549</id>
+		<nme>Show Battery Bar</nme>
+		<Action sr="act0" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Update Battery Bar</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task550">
+		<cdate>1436661422853</cdate>
+		<edate>1522528773823</edate>
+		<id>550</id>
+		<nme>Update Battery Bar</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>194</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">%BB_status</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%BB_status</lhs>
+					<op>2</op>
+					<rhs>/visible/</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%BB_height</lhs>
+					<op>6</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%BB_height</Str>
+			<Str sr="arg1" ve="3">2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>58</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Str sr="arg1" ve="3">Bar</Str>
+			<Int sr="arg2" val="2"/>
+			<Int sr="arg3">
+				<var>%res2</var>
+			</Int>
+			<Int sr="arg4">
+				<var>%BB_height</var>
+			</Int>
+			<Int sr="arg5" val="400"/>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>58</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Str sr="arg1" ve="3">Bar</Str>
+			<Int sr="arg2" val="2"/>
+			<Int sr="arg3">
+				<var>%res2</var>
+			</Int>
+			<Int sr="arg4">
+				<var>%BB_height</var>
+			</Int>
+			<Int sr="arg5" val="400"/>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%BB_lWidth</Str>
+			<Str sr="arg1" ve="3">%res2-round(%BATT*(%res2/100))</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%BB_pWidth</Str>
+			<Str sr="arg1" ve="3">%res1-round(%BATT*(%res1/100))</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%ppos</Str>
+			<Str sr="arg1" ve="3">round(%BATT*(%res1/100))</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%lpos</Str>
+			<Str sr="arg1" ve="3">round(%BATT*(%res2/100))</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>348</code>
+			<Int sr="arg0" val="3"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">%res</Str>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>58</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Str sr="arg1" ve="3">Hider</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3">
+				<var>%BB_pWidth</var>
+			</Int>
+			<Int sr="arg4">
+				<var>%BB_height</var>
+			</Int>
+			<Int sr="arg5" val="400"/>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>58</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Str sr="arg1" ve="3">Hider</Str>
+			<Int sr="arg2" val="2"/>
+			<Int sr="arg3">
+				<var>%BB_lWidth</var>
+			</Int>
+			<Int sr="arg4">
+				<var>%BB_height</var>
+			</Int>
+			<Int sr="arg5" val="400"/>
+		</Action>
+		<Action sr="act22" ve="7">
+			<code>57</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Str sr="arg1" ve="3">Hider</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3">
+				<var>%ppos</var>
+			</Int>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5">
+				<var>500</var>
+			</Int>
+		</Action>
+		<Action sr="act23" ve="7">
+			<code>57</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Str sr="arg1" ve="3">Hider</Str>
+			<Int sr="arg2" val="2"/>
+			<Int sr="arg3">
+				<var>%lpos</var>
+			</Int>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="400"/>
+		</Action>
+		<Action sr="act24" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%res</Str>
+			<Str sr="arg1" ve="3">x</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>348</code>
+			<Int sr="arg0" val="1"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">%orientation</Str>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%orientation</lhs>
+					<op>4</op>
+					<rhs>landscape</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%tmpRes</Str>
+			<Str sr="arg1" ve="3">%res1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%res1</Str>
+			<Str sr="arg1" ve="3">%res2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%res2</Str>
+			<Str sr="arg1" ve="3">%tmpRes</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%tmpRes</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task659">
+		<cdate>1436661422853</cdate>
+		<edate>1522640024517</edate>
+		<id>659</id>
+		<nme>UpdateBatteryBar</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>194</code>
+			<label>Original version from Reddit</label>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">%BB_status</Str>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%BB_status</lhs>
+					<op>2</op>
+					<rhs>/visible/</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%res2</Str>
+			<Str sr="arg1" ve="3">%tmpRes</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%tmpRes</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%BB_height</lhs>
+					<op>6</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%BB_height</Str>
+			<Str sr="arg1" ve="3">2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%BB_pWidth</Str>
+			<Str sr="arg1" ve="3">round(%BATT*(%res1/100))</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%BB_lWidth</Str>
+			<Str sr="arg1" ve="3">round(%BATT*(%res2/100))</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>58</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Str sr="arg1" ve="3">Bar</Str>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3">
+				<var>%BB_pWidth</var>
+			</Int>
+			<Int sr="arg4">
+				<var>%BB_height</var>
+			</Int>
+			<Int sr="arg5" val="400"/>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>58</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Str sr="arg1" ve="3">Bar</Str>
+			<Int sr="arg2" val="2"/>
+			<Int sr="arg3">
+				<var>%BB_lWidth</var>
+			</Int>
+			<Int sr="arg4">
+				<var>%BB_height</var>
+			</Int>
+			<Int sr="arg5" val="400"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%BGrad</Str>
+			<Str sr="arg1" ve="3">FF0000,FF0400,FF0900,FF0D00,FF1200,FF1700,FF1B00,FF2000,FF2400,FF2900,FF2E00,FF3200,FF3700,FF3B00,FF4000,FF4500,FF4900,FF4E00,FF5300,FF5700,FF5C00,FF6000,FF6500,FF6A00,FF6E00,FF7300,FF7700,FF7C00,FF8100,FF8500,FF8A00,FF8E00,FF9300,FF9800,FF9C00,FFA100,FFA600,FFAA00,FFAF00,FFB300,FFB800,FFBD00,FFC100,FFC600,FFCA00,FFCF00,FFD400,FFD800,FFDD00,FFE100,FFE100,FFE700,FFED00,FFF300,FFF900,FFFE00,F9FF00,F3FF00,EDFF00,E7FF00,E2FF00,DCFF00,D6FF00,D0FF00,CAFF00,C5FF00,BFFF00,B9FF00,B3FF00,ADFF00,A8FF00,A2FF00,9CFF00,96FF00,90FF00,8BFF00,85FF00,7FFF00,79FF00,73FF00,6EFF00,68FF00,62FF00,5CFF00,56FF00,51FF00,4BFF00,45FF00,3FFF00,39FF00,34FF00,2EFF00,28FF00,22FF00,1CFF00,17FF00,11FF00,0BFF00,05FF00,00FF00</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>55</code>
+			<Str sr="arg0" ve="3">scnBatteryBar</Str>
+			<Str sr="arg1" ve="3">Bar</Str>
+			<Str sr="arg2" ve="3">88025C</Str>
+			<Str sr="arg3" ve="3">%BGrad(%BATT)</Str>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%BGrad</Str>
+			<Str sr="arg1" ve="3">,</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>348</code>
+			<Int sr="arg0" val="3"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">%res</Str>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%res</Str>
+			<Str sr="arg1" ve="3">x</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>348</code>
+			<Int sr="arg0" val="1"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">%orientation</Str>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%orientation</lhs>
+					<op>4</op>
+					<rhs>landscape</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%tmpRes</Str>
+			<Str sr="arg1" ve="3">%res1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%res1</Str>
+			<Str sr="arg1" ve="3">%res2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
